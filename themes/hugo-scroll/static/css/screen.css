@@ -41,6 +41,23 @@
 }
 
 /* Apply these base styles to all icons */
+.content_container {
+                
+}
+.content_container .text {
+    font-size: medium;
+    text-align: justify;
+}
+.content_container .pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content_container .pictures .picture {
+    width: 460px;
+    margin: 20px;
+}
 .i-ghost,
 .icon-feed,
 .icon-twitter,
