@@ -1,0 +1,126 @@
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+                
+                .video_container {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                align-items: center;
+                 }
+
+                 
+                 .video_container .video {
+                width: 630px;
+                height: 370px;
+                 }
+
+                .text {
+                text-align: justify;
+                }
+
+                .notebook_link {
+                    display: flex;
+                    max-width: 225px;
+                    /* max-width: 250px; */
+                    background-color: white;
+                    /* margin: 20px; */
+                    /* width: 600px;*/
+                    height: 225px; 
+                    /* height: 300px; */
+
+                    text-decoration: none;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-radius: 10%;
+                    border: 2px solid #cbc5b9;
+                    margin-bottom: 8px;
+                }
+
+                .notebook_link .notebook_container {
+                    display :flex;
+                    /* width: 205px; */
+                    /* width: 23%;
+                    max-height: 200px; */
+                    /* margin-bottom: 30px; */
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    /* padding-top: 20px;
+                    padding-bottom: 20px; */
+                    gap: 30px;
+                    
+                }
+
+
+                .notebook_link .notebook_container .notebook_text {
+                width: 75%; 
+                text-align: center;
+                font-size: 16pt;
+                height: 60px;
+                }
+
+                .notebook_link .notebook_container .notebook_icon {
+                width: 30%; 
+                text-align: center;
+                }
+
+
+            
+        </style>
+    </head>
+
+        <httpProtocol>
+            <customHeaders>
+                <add name="Access-Control-Allow-Origin" value="*" />
+            </customHeaders>
+        </httpProtocol>
+
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.2.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.2.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.4.2.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-mathjax-2.4.2.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-api-2.4.2.min.js"></script>
+
+
+    <body class="main">
+            {{ $text := .Get 0 }}
+            <div>
+                <div class="text">
+                    <p>{{$text}}</p>
+                </div>
+
+                <div class="video_container">
+                    <iframe class="video"
+                    src="https://www.youtube.com/embed/kFgPfyupqQk">
+                    </iframe>
+
+                    <a class="notebook_link" href="https://nbviewer.org/github/PalinaKG/SocialDataNotebook/blob/main/Final_notebook.ipynb">
+                        <div class="notebook_container">
+                            <div class="notebook_icon">
+                                {{ $image := $.Page.Parent.Resources.GetMatch "icons/noun-book-4801141.png" }}
+                                <img src="{{ $image.RelPermalink }}">
+                            </div>
+                            <div class="notebook_text">
+                                Explainer Notebook
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+
+            </div>
+        
+
+
+     
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <style>
+            .content_container {
+                
+            }
+            .content_container .text {
+                font-size: medium;
+                text-align: justify;
+            }
+            .content_container .pictures {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .content_container .pictures .picture {
+                width: 460px;
+                margin: 20px;
+            }
+
+        </style>
+    </head>
+    <div class="content_container">
+        <p class="text">{{.Get "text"}}</p>
+        <div class="pictures">
+            <img class="picture" src = "{{ .Get "New_York" }}" >
+            <img class="picture" src = "{{ .Get "Copenhagen" }}" >
+            <img class="picture" src = "{{ .Get "Melbourne" }}" >
+            <img class="picture" src = "{{ .Get "San_Francisco" }}" >
+            <img class="picture" src = "{{ .Get "Helsinki" }}" >
+
+        </div>
+    </div>
+
+    <!-- <div width="500px" display="flex">
+        <p style="width: 45%; float: left; font-size: medium;">{{.Get "text"}}</p>
+        <img width= "45%" src = "{{ .Get "New_York" }}" >
+    </div> -->
+</html>
+
+
+

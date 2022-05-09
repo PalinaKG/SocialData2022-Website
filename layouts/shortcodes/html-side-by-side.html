@@ -1,0 +1,82 @@
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+
+                
+
+                .geo_flex {
+                    display :flex;
+                    /* font-size: medium; */
+                    align-items: center;
+                    justify-content: space-around;
+                    
+                }
+
+
+                .geo_flex .text {
+                max-width: 550px; 
+                min-width: 300px; 
+                text-align: justify;
+                /* float: right;  */
+                /* font-size: medium; */
+                }
+
+                @media only screen and (max-width: 1120px) {
+                    .geo_flex {
+                        display:unset
+
+                    }
+                    .geo_flex .text {
+                        max-width: unset;
+                        min-width: unset;
+                    }
+
+
+                }
+/*             
+            @media only screen  and (max-width: "1026px") {
+            #image-site {
+                float: top;
+                }
+            } */
+            
+        </style>
+    </head>
+    <!-- <link rel="stylesheet" href="{{ "../../docs/css/style_hmg.css" | absURL }}" /> -->
+        <!-- <link rel="stylesheet" href="../../docs/css/style_hmg.css"> -->
+        <httpProtocol>
+            <customHeaders>
+                <add name="Access-Control-Allow-Origin" value="*" />
+            </customHeaders>
+        </httpProtocol>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.2.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.2.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.4.2.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-mathjax-2.4.2.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-api-2.4.2.min.js"></script>
+
+
+    <body class="main">
+            {{ $text := .Get 1 }}
+            <div class="geo_flex">
+                <div class="geo">
+                    {{ $file := .Get 0 }}
+                    {{ $file | readFile | safeHTML }}
+                </div>
+                <div class="geo">
+                    {{ $file := .Get 1 }}
+                    {{ $file | readFile | safeHTML }}
+                </div>
+
+            </div>
+        
+
+
+     
+    </body>
+</html>

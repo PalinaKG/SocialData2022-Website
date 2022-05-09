@@ -1,0 +1,51 @@
+
+
+<html>
+    <head>
+        <style>
+            .info {
+                background-color: #e0ecf4;
+                border-radius: 20px;
+                max-width: 1000px;
+                border: 2pt solid #098ce3;
+                padding-top: 5px; 
+                padding-bottom: 5px; 
+                padding-left: 15px;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                
+            }
+
+            .info .info_text {
+                padding: 3px;
+                padding-right: 20px;
+                padding-left: 20px;
+                font-size: 12pt;
+                color: #098ce3;
+                font-style: italic;
+                
+            }
+
+            .info .info_icon {
+                height:35px;
+                width:35px;
+            }
+
+        </style>
+
+
+{{ $text1 := .Get 0 }}
+<div class="info">
+    <div class="info_icon">
+        {{ $image := $.Page.Parent.Resources.GetMatch "icons/output-onlinepngtools.png" }}
+        <img src="{{ $image.RelPermalink }}">
+    </div>
+    <div class="info_text">
+        {{$text1}}
+    </div>
+</div>
+
+</head>
+
+</html>
