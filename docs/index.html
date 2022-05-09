@@ -70,7 +70,6 @@
           color: black;
      }
      .post-holder {
-         width: 900px;
           background: #f2efe8;
            
      }
@@ -1851,7 +1850,189 @@
                     <h2 class="post-title">Datasets</h2>
                 </header>
                 <section class="post-content">
+                    <p>Here you can find links to the datasets we used for this project!</p>
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+                .image-site {
+                    width: 100px; 
+                 
+                 
+                }
+
+                
+
+                .dataset_flex {
+                    display :flex;
+                     
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    gap: 20px;
                     
+                }
+
+                .dataset_flex .link {
+                    display: flex;
+                    max-width: 225px;
+                    background-color: #f2efe8;
+                     
+                     
+                    height: 225px; 
+                    text-decoration: none;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-radius: 10%;
+                    border: 2px solid #cbc5b9;
+                    margin-bottom: 8px;
+                }
+
+                .dataset_flex .link .dataset {
+                    display :flex;
+                     
+                     
+                     
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                     
+                    gap: 30px;
+                    
+                }
+
+
+                .dataset_flex .link .dataset .data_text {
+                width: 75%; 
+                text-align: center;
+                font-size: 16pt;
+                height: 60px;
+                }
+
+                .dataset_flex .link .dataset .data_icon {
+                width: 30%; 
+                text-align: center;
+                }
+
+            
+        </style>
+    </head>
+        <httpProtocol>
+            <customHeaders>
+                <add name="Access-Control-Allow-Origin" value="*" />
+            </customHeaders>
+        </httpProtocol>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.2.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.2.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.4.2.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-mathjax-2.4.2.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-api-2.4.2.min.js"></script>
+
+
+    <body class="main">
+            <div class="dataset_flex">
+                <a class="link" href="https://data.cityofnewyork.us/Environment/Air-Quality/c3uy-2p5r?fbclid=IwAR1G5t_e98bkJjc05yHqzFzjZ9EByKCmrmxJZPVhxgfx76fB7CC3AsvY3lM">
+                    <div class="dataset">
+                        <div class="data_icon">
+                            
+                            <img src="/SocialData2022/homepage/icons/noun-pollution-2950387.png">
+                        </div>
+                        <div class="data_text">
+                            Air Quality
+                        </div>
+                    </div>
+                </a>
+                <a class="link" href="https://data.world/data-society/global-climate-change-data">
+                    <div class="dataset">
+                        <div class="data_icon">
+                            
+                            <img src="/SocialData2022/homepage/icons/noun-temperature-1396610.png">
+                        </div>
+                        <div class="data_text">
+                            Global Land Temperatures
+                        </div>
+                    </div>
+                </a>
+                <a class="link" href="https://data.cccnewyork.org/data">
+                    <div class="dataset">
+                        <div class="data_icon">
+                            
+                            <img src="/SocialData2022/homepage/icons/noun-empty-wallet-4339552.png">
+                        </div>
+                        <div class="data_text">
+                            Poverty
+                        </div>
+                    </div>
+                </a>
+                <a class="link" href="https://data.cccnewyork.org/data">
+                    <div class="dataset">
+                        <div class="data_icon">
+                            
+                            <img src="/SocialData2022/homepage/icons/noun-pile-of-money-2410488.png">
+                        </div>
+                        <div class="data_text">
+                            Incomes
+                        </div>
+                    </div>
+                </a>
+                <a class="link" href="https://data.cccnewyork.org/data">
+                    <div class="dataset">
+                        <div class="data_icon">
+                            
+                            <img src="/SocialData2022/homepage/icons/noun-population-2654132.png">
+                        </div>
+                        <div class="data_text">
+                            Population
+                        </div>
+                    </div>
+                </a>
+                <a class="link" href="https://github.com/nycehs/NYC_geography/blob/master/UHF42.geo.json">
+                    <div class="dataset">
+                        <div class="data_icon">
+                            
+                            
+                                <img src="/SocialData2022/homepage/icons/noun-map-4802179.png">
+                        </div>
+                        <div class="data_text">
+                            Geo Data
+                        </div>
+                    </div>
+                </a>
+                <a class="link" href="http://www.infoshare.org/misc/UHF.pdf">
+                    <div class="dataset">
+                        <div class="data_icon">
+                            
+                            <img src="/SocialData2022/homepage/icons/noun-new-york-city-map-4762939.png">
+                        </div>
+                        <div class="data_text">
+                            UHF42 Neighbourhoods
+                        </div>
+                    </div>
+                </a>
+                <a class="link" href="https://www.kaggle.com/datasets/muonneutrino/new-york-city-census-data?resource=download&select=nyc_census_tracts.csv">
+                    <div class="dataset">
+                        <div class="data_icon">
+                            
+                            <img src="/SocialData2022/homepage/icons/noun-data-4480610.png">
+                        </div>
+                        <div class="data_text">
+                            Census Data
+                        </div>
+                    </div>
+                </a>
+            </div>
+        
+
+
+     
+    </body>
+</html>
+
+
                 </section>
             </article>
             <div class='post-after'></div>
