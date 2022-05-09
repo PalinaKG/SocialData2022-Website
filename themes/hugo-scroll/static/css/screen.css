@@ -449,8 +449,9 @@ ul li {
 
 /* Creates a responsive wrapper that makes our content scale nicely */
 .inner {
+  max-width: 1200;
+  width: 1200px;
   position: relative;
-  width: 80%;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -516,12 +517,15 @@ ul li {
 }
 
 .post-holder {
+  max-width: 1200;
   width: 1200px;
   height: 100%;
   background: #f2efe8;
   position: relative;
 }
 .post-holder.odd {
+  max-width: 1200;
+  width: 1200px;
   background: #b80135;
   color: white;
 }
@@ -947,7 +951,8 @@ a.fn-item.active {
     margin-left: 0;
   }
   .post-holder {
-    width: 900px;
+    max-width: 1200;
+  width: 1200px;
     padding-top: 20px;
   }
   #site-head {
