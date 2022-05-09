@@ -60,9 +60,7 @@
 
 /* Each icon is created by inserting the corret character into the
       content of the :before pseudo element. Like a boss. */
-.p {
-  width: 900px
-}
+
 .i-ghost:before {
   content: "\e000";
 }
@@ -523,7 +521,7 @@ ul li {
   max-width: 1200;
   width: 1000px;
   height: 100%;
-  background: #f2efe8;
+  background: red;
   position: relative;
 }
 .post-holder.odd {
