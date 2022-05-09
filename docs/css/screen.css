@@ -60,6 +60,9 @@
 
 /* Each icon is created by inserting the corret character into the
       content of the :before pseudo element. Like a boss. */
+.p {
+  width: 900px
+}
 .i-ghost:before {
   content: "\e000";
 }
