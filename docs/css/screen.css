@@ -979,6 +979,7 @@ a.fn-item.active {
   }
 
   .post {
+    width: 1000px;
     font-size: 0.9em;
     line-height: 1.6em;
   }
