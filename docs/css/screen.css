@@ -41,25 +41,6 @@
 }
 
 /* Apply these base styles to all icons */
-.content_container {
-  width: 900px
-                
-}
-.content_container .text {
-    font-size: medium;
-    text-align: justify;
-}
-.content_container .pictures {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.content_container .pictures .picture {
-    width: 460px;
-    margin: 20px;
-}
-
 
 .i-ghost,
 .icon-feed,
@@ -548,8 +529,8 @@ ul li {
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
   position: relative;
-  width: 1000px;
-  max-width: 100%;
+  width: 900px;
+  max-width: 900px;
   margin: 0rem auto;
   padding-bottom: 4rem;
   padding-top: 4rem;
@@ -704,8 +685,8 @@ a.fn-item.active {
 
 /* Keep large images within the bounds of the post-width */
 .post-content img {
+  max-width: 900px;
   display: block;
-  max-width: 100%;
   margin: 0 auto;
 }
 
