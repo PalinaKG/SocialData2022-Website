@@ -450,7 +450,7 @@ ul li {
 .inner {
   position: relative;
   width: 80%;
-  max-width: 700px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -479,7 +479,6 @@ ul li {
 
 #site-head:after {
 }
-
 
 /* Yo-logo. Yolo-go. Upload one in ghost/settings/ */
 #blog-logo img {
@@ -530,10 +529,11 @@ ul li {
 .post {
   position: relative;
   width: 80%;
-  max-width: 700px;
+  max-width: 100%;
   margin: 0rem auto;
   padding-bottom: 4rem;
   padding-top: 4rem;
+  padding-left: 200px;
   height: 70%;
   word-break: break-word;
   hyphens: auto;
@@ -689,7 +689,6 @@ a.fn-item.active {
   margin: 0 auto;
 }
 
-
 /* The author credit area after the post */
 .post-footer {
   position: relative;
@@ -760,7 +759,7 @@ a.fn-item.active {
 .pagination {
   position: relative;
   width: 80%;
-  max-width: 700px;
+  max-width: 100%;
   margin: 4rem auto;
   font-family: "Open Sans", sans-serif;
   font-size: 1.3rem;
@@ -830,6 +829,11 @@ a.fn-item.active {
 .poweredby .i-ghost {
   font-weight: 700;
   text-decoration: none;
+}
+
+.post-content {
+  width: 1000px;
+  text-align: justify;
 }
 
 .poweredby .i-ghost:hover {
