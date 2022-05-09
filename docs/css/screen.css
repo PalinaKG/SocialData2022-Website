@@ -41,7 +41,6 @@
 }
 
 /* Apply these base styles to all icons */
-
 .i-ghost,
 .icon-feed,
 .icon-twitter,
@@ -60,7 +59,6 @@
 
 /* Each icon is created by inserting the corret character into the
       content of the :before pseudo element. Like a boss. */
-
 .i-ghost:before {
   content: "\e000";
 }
@@ -450,9 +448,8 @@ ul li {
 
 /* Creates a responsive wrapper that makes our content scale nicely */
 .inner {
-  max-width: 1200;
-  width: 1000px;
   position: relative;
+  width: 80%;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -518,15 +515,12 @@ ul li {
 }
 
 .post-holder {
-  max-width: 1200;
-  width: 1000px;
+  width: 100%;
   height: 100%;
-  background: red;
+  background: #f2efe8;
   position: relative;
 }
 .post-holder.odd {
-  max-width: 1200;
-  width: 1000px;
   background: #b80135;
   color: white;
 }
@@ -534,8 +528,8 @@ ul li {
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
   position: relative;
-  width: 1000px;
-  max-width: 1000px;
+  width: 80%;
+  max-width: 100%;
   margin: 0rem auto;
   padding-bottom: 4rem;
   padding-top: 4rem;
@@ -952,8 +946,6 @@ a.fn-item.active {
     margin-left: 0;
   }
   .post-holder {
-    max-width: 1200;
-  width: 1000px;
     padding-top: 20px;
   }
   #site-head {
@@ -977,7 +969,6 @@ a.fn-item.active {
   }
 
   .post {
-    width: 1000px;
     font-size: 0.9em;
     line-height: 1.6em;
   }
@@ -1031,7 +1022,7 @@ a.fn-item.active {
   }
 
   .post {
-    width: 1000px;
+    width: auto;
     margin-left: 16px;
     margin-right: 16px;
     font-size: 0.8em;
