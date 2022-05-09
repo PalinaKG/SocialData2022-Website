@@ -685,8 +685,8 @@ a.fn-item.active {
 
 /* Keep large images within the bounds of the post-width */
 .post-content img {
-  max-width: 900px;
   display: block;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -947,6 +947,7 @@ a.fn-item.active {
     margin-left: 0;
   }
   .post-holder {
+    width: 900px;
     padding-top: 20px;
   }
   #site-head {
