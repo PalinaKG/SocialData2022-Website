@@ -42,6 +42,7 @@
 
 /* Apply these base styles to all icons */
 .content_container {
+  width: 900px
                 
 }
 .content_container .text {
